@@ -5,7 +5,7 @@ Scratch pad for OOP concepts in Python.
 '''
 
 '''
---Classes--
+-- Classes --
 '''
 
 class Parrot:
@@ -42,7 +42,7 @@ print(blue.sing("'Happy'"))
 print(blue.dance())
 
 '''
---Inheritance--
+-- Inheritance --
 '''
 
 # Parent class
@@ -75,3 +75,19 @@ peggy = Penguin()
 peggy.who_is_this()
 peggy.swim()
 peggy.run()
+
+'''
+-- Encapsulation --
+'''
+class Computer:
+
+    def __init__(self):
+        # Private attribute (encapsulation)
+        self.__maxprice = 900
+
+    def sell(self):
+        print("Selling price: {}".format(self.__maxprice))
+
+    def set_max_price(self, price):
+        self.__maxprice = price
+
