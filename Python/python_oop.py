@@ -11,7 +11,7 @@ class Bird:
         print("Bird is ready")
 
     def who_is_this(self):
-        print(self)
+        print("Bird")
 
     def swim(self):
         print("Swim faster")
@@ -25,7 +25,7 @@ class Penguin(Bird):
         print("Penguin is ready")
 
     def who_is_this(self):
-        print(self)
+        print("Penguin")
 
     def run(self):
         print("Run faster")
@@ -47,6 +47,10 @@ class Parrot:
     def dance(self):
         return "{} is now dancing".format(self.name)
 
+'''
+--Classes--
+'''
+
 # Instantiate the parrot class
 blue = Parrot("Blue", 10)
 Woo = Parrot("Woo", 15)
@@ -62,3 +66,12 @@ print("{} is {} years old".format( Woo.name, Woo.age))
 # Call instance methods
 print(blue.sing("'Happy'"))
 print(blue.dance())
+
+'''
+--Inheritance--
+'''
+
+peggy = Penguin()
+peggy.who_is_this()
+peggy.swim()
+peggy.run()
