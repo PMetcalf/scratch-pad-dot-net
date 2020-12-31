@@ -1,7 +1,7 @@
 '''
 Python OOP
 
-Scratch pad for OOP concepts in Python.
+An introduction to aspects of OOP as implemented in Python.
 '''
 
 '''
@@ -79,6 +79,7 @@ peggy.run()
 '''
 -- Encapsulation --
 '''
+
 class Computer:
 
     def __init__(self):
@@ -101,3 +102,35 @@ computer.sell()
 # Change the price using setter function
 computer.set_max_price(1000)
 computer.sell()
+
+'''
+Polymorphism
+'''
+
+class Robin:
+
+    def fly(self):
+        print("Robin can fly")
+
+    def swim(self):
+        print("Robin can't swim")
+
+class Puffin:
+
+    def fly(self):
+        print("Puffin doesn't fly well")
+
+    def swim(self):
+        print("Puffin swims really well")
+
+# Common interface
+def flying_test(bird):
+    bird.fly()
+
+# Instantiate objects
+robin = Robin()
+puffin = Puffin()
+
+# Use the interface in polymorphism
+flying_test(robin)
+flying_test(puffin)
