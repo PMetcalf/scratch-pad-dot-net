@@ -91,3 +91,13 @@ class Computer:
     def set_max_price(self, price):
         self.__maxprice = price
 
+computer = Computer()
+computer.sell()
+
+# Try to change the price directly
+computer.__maxprice = 1000
+computer.sell()
+
+# Change the price using setter function
+computer.set_max_price(1000)
+computer.sell()
