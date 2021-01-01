@@ -6,8 +6,6 @@ namespace c_sharp_classes
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine("Hello World!");
-
             Users user = new Users("Paul", 35);
             user.GetUserDetails();
 
