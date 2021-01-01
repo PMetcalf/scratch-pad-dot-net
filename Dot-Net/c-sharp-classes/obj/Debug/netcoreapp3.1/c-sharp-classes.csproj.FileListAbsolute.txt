@@ -1,0 +1,13 @@
+D:\Developer Area\scratch-pad\Dot-Net\c-sharp-classes\bin\Debug\netcoreapp3.1\c-sharp-classes.exe
+D:\Developer Area\scratch-pad\Dot-Net\c-sharp-classes\bin\Debug\netcoreapp3.1\c-sharp-classes.deps.json
+D:\Developer Area\scratch-pad\Dot-Net\c-sharp-classes\bin\Debug\netcoreapp3.1\c-sharp-classes.runtimeconfig.json
+D:\Developer Area\scratch-pad\Dot-Net\c-sharp-classes\bin\Debug\netcoreapp3.1\c-sharp-classes.runtimeconfig.dev.json
+D:\Developer Area\scratch-pad\Dot-Net\c-sharp-classes\bin\Debug\netcoreapp3.1\c-sharp-classes.dll
+D:\Developer Area\scratch-pad\Dot-Net\c-sharp-classes\bin\Debug\netcoreapp3.1\c-sharp-classes.pdb
+D:\Developer Area\scratch-pad\Dot-Net\c-sharp-classes\obj\Debug\netcoreapp3.1\c-sharp-classes.csprojAssemblyReference.cache
+D:\Developer Area\scratch-pad\Dot-Net\c-sharp-classes\obj\Debug\netcoreapp3.1\c-sharp-classes.AssemblyInfoInputs.cache
+D:\Developer Area\scratch-pad\Dot-Net\c-sharp-classes\obj\Debug\netcoreapp3.1\c-sharp-classes.AssemblyInfo.cs
+D:\Developer Area\scratch-pad\Dot-Net\c-sharp-classes\obj\Debug\netcoreapp3.1\c-sharp-classes.csproj.CoreCompileInputs.cache
+D:\Developer Area\scratch-pad\Dot-Net\c-sharp-classes\obj\Debug\netcoreapp3.1\c-sharp-classes.dll
+D:\Developer Area\scratch-pad\Dot-Net\c-sharp-classes\obj\Debug\netcoreapp3.1\c-sharp-classes.pdb
+D:\Developer Area\scratch-pad\Dot-Net\c-sharp-classes\obj\Debug\netcoreapp3.1\c-sharp-classes.genruntimeconfig.cache

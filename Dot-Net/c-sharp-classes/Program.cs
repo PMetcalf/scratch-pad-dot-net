@@ -9,4 +9,9 @@ namespace c_sharp_classes
             Console.WriteLine("Hello World!");
         }
     }
+
+    public class Users
+    {
+        //
+    }
 }
