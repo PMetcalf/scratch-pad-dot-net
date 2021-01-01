@@ -16,6 +16,7 @@ namespace c_sharp_classes
         }
     }
 
+    // [access modifier] - [class] - [identifier]
     public class Users
     {
         // Class fields
