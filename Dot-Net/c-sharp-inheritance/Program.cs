@@ -65,12 +65,14 @@ namespace c_sharp_inheritance
     {
         static void Main(string[] args)
         {
-            Details details = new Details();
-            details.Name = "Paul";
-            details.Age = 35;
+            Jobdetails jobdetails = new Jobdetails();
+            jobdetails.Name = "Paul";
+            jobdetails.Age = 35;
+            jobdetails.Job = "CEO";
 
-            details.GetUserInfo("Wirral");
-            details.GetAge();
+            jobdetails.GetUserInfo("Wirral");
+            jobdetails.GetAge();
+            jobdetails.GetJob();
 
             Console.WriteLine("\nPress any key to exit ...");
             Console.ReadLine();
