@@ -25,6 +25,23 @@ namespace c_sharp_inheritance
         }
     }
 
+    // Child class (inherited)
+    public class Details : User
+    {
+        public int Age;
+
+        // Child class constructor
+        public Details()
+        {
+            Console.WriteLine("Child Class Constructor");
+        }
+
+        // Child method
+        public void GetAge()
+        {
+            Console.WriteLine("Age: {0}", Age);
+        }
+    }
 
     class Program
     {
