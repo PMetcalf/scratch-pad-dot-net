@@ -43,6 +43,24 @@ namespace c_sharp_inheritance
         }
     }
 
+    // Second child class (inherited)
+    public class Jobdetails : Details
+    {
+        public string Job;
+
+        // Constructor
+        public Jobdetails()
+        {
+            Console.WriteLine("Tertiary Class Constructor");
+        }
+
+        // Child method
+        public void GetJob()
+        {
+            Console.WriteLine("Job: {0}", Job);
+        }
+    }
+
     class Program
     {
         static void Main(string[] args)
