@@ -47,7 +47,15 @@ namespace c_sharp_inheritance
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Details details = new Details();
+            details.Name = "Paul";
+            details.Age = 35;
+
+            details.GetUserInfo("Wirral");
+            details.GetAge();
+
+            Console.WriteLine("\nPress any key to exit ...");
+            Console.ReadLine();
         }
     }
 }
