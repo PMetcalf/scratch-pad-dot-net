@@ -12,7 +12,7 @@ namespace c_sharp_classes
             user.GetUserDetails();
 
             Console.WriteLine("Press Enter Key to Exit ...");
-
+            Console.ReadLine();
         }
     }
 
