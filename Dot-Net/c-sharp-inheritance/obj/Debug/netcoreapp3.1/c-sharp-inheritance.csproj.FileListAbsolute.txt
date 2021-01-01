@@ -1,0 +1,13 @@
+D:\Developer Area\scratch-pad\Dot-Net\c-sharp-inheritance\bin\Debug\netcoreapp3.1\c-sharp-inheritance.exe
+D:\Developer Area\scratch-pad\Dot-Net\c-sharp-inheritance\bin\Debug\netcoreapp3.1\c-sharp-inheritance.deps.json
+D:\Developer Area\scratch-pad\Dot-Net\c-sharp-inheritance\bin\Debug\netcoreapp3.1\c-sharp-inheritance.runtimeconfig.json
+D:\Developer Area\scratch-pad\Dot-Net\c-sharp-inheritance\bin\Debug\netcoreapp3.1\c-sharp-inheritance.runtimeconfig.dev.json
+D:\Developer Area\scratch-pad\Dot-Net\c-sharp-inheritance\bin\Debug\netcoreapp3.1\c-sharp-inheritance.dll
+D:\Developer Area\scratch-pad\Dot-Net\c-sharp-inheritance\bin\Debug\netcoreapp3.1\c-sharp-inheritance.pdb
+D:\Developer Area\scratch-pad\Dot-Net\c-sharp-inheritance\obj\Debug\netcoreapp3.1\c-sharp-inheritance.csprojAssemblyReference.cache
+D:\Developer Area\scratch-pad\Dot-Net\c-sharp-inheritance\obj\Debug\netcoreapp3.1\c-sharp-inheritance.AssemblyInfoInputs.cache
+D:\Developer Area\scratch-pad\Dot-Net\c-sharp-inheritance\obj\Debug\netcoreapp3.1\c-sharp-inheritance.AssemblyInfo.cs
+D:\Developer Area\scratch-pad\Dot-Net\c-sharp-inheritance\obj\Debug\netcoreapp3.1\c-sharp-inheritance.csproj.CoreCompileInputs.cache
+D:\Developer Area\scratch-pad\Dot-Net\c-sharp-inheritance\obj\Debug\netcoreapp3.1\c-sharp-inheritance.dll
+D:\Developer Area\scratch-pad\Dot-Net\c-sharp-inheritance\obj\Debug\netcoreapp3.1\c-sharp-inheritance.pdb
+D:\Developer Area\scratch-pad\Dot-Net\c-sharp-inheritance\obj\Debug\netcoreapp3.1\c-sharp-inheritance.genruntimeconfig.cache
