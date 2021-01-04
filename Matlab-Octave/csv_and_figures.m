@@ -35,3 +35,8 @@ printf("Correlation Coefficient: %f/n", r_value);
 % Create dataset representing fitted line for plotting
 fit_x = linspace(min(x) - 1, max(x) + 1, 100);
 fit_y = slope * fit_x + intercept;
+
+% Set figure properties
+fig_width = 7;  %inch
+fig_height = fig_width / 16 * 9;  %inch
+fig_dpi = 100;
