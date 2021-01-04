@@ -69,5 +69,18 @@ plot(ax, x, y,
      "markersize", 20,
      "linestyle", "none");
      
-hold(ax, "off");     
-              
+hold(ax, "off");
+
+% Add legend
+lg = legend(ax, "Fit", "Data");
+set(lg, "location", "northwest");
+
+% Create save parameters from strings
+image_size = sprintf("-S%f,%f", fig_width * fig_dpi, fig_height * fig_dpi);
+image_resolution = sprintf("-r%f,%f", fig_dpi);     
+
+% Save figure
+print(fig, 'fit_octave.png',
+      '-dpng',
+      image_size,
+      image_resolution);
