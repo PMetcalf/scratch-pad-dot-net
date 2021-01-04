@@ -40,3 +40,17 @@ fit_y = slope * fit_x + intercept;
 fig_width = 7;  %inch
 fig_height = fig_width / 16 * 9;  %inch
 fig_dpi = 100;
+
+% Create figure
+fig = figure("units", "inches", "position", [1, 1, fig_width, fig_height]);
+ax = axes("parent", fig);
+
+% Define axes parameters
+set(ax, "fontsize", 14);
+set(ax, "linewidth", 2);
+
+xlim(ax, [min(x) - 1, max(x) + 1]);
+ylim(ax, [min(y) - 1, max(y) + 1]);
+
+xlabel(ax, 'x');
+ylabel(ax, 'y');
