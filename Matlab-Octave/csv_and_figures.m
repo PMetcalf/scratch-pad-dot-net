@@ -14,6 +14,12 @@ file_string = [input_file_directory input_file_name];
 % Load dataset
 data = dlmread(file_string, delimiter, skip_header, 0);
 
-% Slice oyut x and y
-x = data(:, column_x)
-y = data(:, column_y)
+% Slice out x and y
+x = data(:, column_x);
+y = data(:, column_y);
+
+% Fit the data
+poly = polyfit(x, y, 1);
+
+slope = poly(1)
+intercept = poly(2)
