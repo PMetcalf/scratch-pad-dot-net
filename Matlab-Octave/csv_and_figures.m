@@ -21,5 +21,13 @@ y = data(:, column_y);
 % Fit the data
 poly = polyfit(x, y, 1);
 
-slope = poly(1)
-intercept = poly(2)
+slope = poly(1);
+intercept = poly(2);
+
+% Determine correlation coefficient
+r_value = corr(x, y);
+
+% Print results
+printf("Slope: %f\n", slope);
+printf("Intercept: %f\n", intercept);
+printf("Correlation Coefficient: %f/n", r_value);
