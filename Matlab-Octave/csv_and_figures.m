@@ -54,3 +54,20 @@ ylim(ax, [min(y) - 1, max(y) + 1]);
 
 xlabel(ax, 'x');
 ylabel(ax, 'y');
+
+% Plot the figure
+
+hold(ax, "on"); % Prevents axis reset
+
+plot(ax, fit_x, fit_y, 
+     "marker", "none",
+     "linestyle", "-",
+     "linewidth", 2);
+        
+plot(ax, x, y,
+     "marker", ".",
+     "markersize", 20,
+     "linestyle", "none");
+     
+hold(ax, "off");     
+              
