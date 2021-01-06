@@ -31,10 +31,13 @@ for job_elem in job_elems:
         title_elem = job_elem.find('h2', class_ = 'title')
         company_elem = job_elem.find('div', class_ = 'company')
         location_elem = job_elem.find('div', class_ = 'location')
-        print(title_elem.text)
-        print(company_elem.text)
-        print(location_elem.text)
+        if None in (title_elem, company_elem, location_elem):
+            continue
+        print(title_elem.text.strip())
+        print(company_elem.text.strip())
+        print(location_elem.text.strip())
         print() # Add a space
 
     except:
         pass
+
