@@ -20,3 +20,9 @@ soup = BeautifulSoup(page.content, 'html.parser')
 # Find Elements of interest
 results = soup.find(id = 'ResultsContainer')
 print(results.prettify())
+
+# Find job elements
+job_elems = results.find_all('section', class_ = 'card-content')
+
+for job_elem in job_elems:
+    print(job_elem, end = '\n'*2)
