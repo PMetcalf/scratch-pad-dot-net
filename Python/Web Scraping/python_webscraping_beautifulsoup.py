@@ -42,4 +42,6 @@ for job_elem in job_elems:
         pass
 
 # Find results for python developers
-python_jobs = results.find_all('h2', string = 'Python Developer')
+python_jobs = results.find_all('h2', 
+                                string = lambda text: 'data' in text.lower())
+print(len(python_jobs))
