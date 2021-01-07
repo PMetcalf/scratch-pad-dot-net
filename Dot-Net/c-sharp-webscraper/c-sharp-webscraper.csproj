@@ -6,4 +6,8 @@
     <RootNamespace>c_sharp_webscraper</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="ScrapySharp" Version="3.0.0" />
+  </ItemGroup>
+
 </Project>

@@ -1,4 +1,8 @@
-﻿using System;
+﻿using HtmlAgilityPack;
+using ScrapySharp.Extensions;
+using ScrapySharp.Network;
+using System;
+using System.Collections.Generic;
 
 namespace c_sharp_webscraper
 {
@@ -7,7 +11,6 @@ namespace c_sharp_webscraper
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            Console.ReadLine();
         }
     }
 }
