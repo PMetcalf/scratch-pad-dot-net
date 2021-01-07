@@ -1,0 +1,13 @@
+C:\Developer\scratch-pad\Dot-Net\c-sharp-webscraper\bin\Debug\netcoreapp3.1\c-sharp-webscraper.exe
+C:\Developer\scratch-pad\Dot-Net\c-sharp-webscraper\bin\Debug\netcoreapp3.1\c-sharp-webscraper.deps.json
+C:\Developer\scratch-pad\Dot-Net\c-sharp-webscraper\bin\Debug\netcoreapp3.1\c-sharp-webscraper.runtimeconfig.json
+C:\Developer\scratch-pad\Dot-Net\c-sharp-webscraper\bin\Debug\netcoreapp3.1\c-sharp-webscraper.runtimeconfig.dev.json
+C:\Developer\scratch-pad\Dot-Net\c-sharp-webscraper\bin\Debug\netcoreapp3.1\c-sharp-webscraper.dll
+C:\Developer\scratch-pad\Dot-Net\c-sharp-webscraper\bin\Debug\netcoreapp3.1\c-sharp-webscraper.pdb
+C:\Developer\scratch-pad\Dot-Net\c-sharp-webscraper\obj\Debug\netcoreapp3.1\c-sharp-webscraper.csprojAssemblyReference.cache
+C:\Developer\scratch-pad\Dot-Net\c-sharp-webscraper\obj\Debug\netcoreapp3.1\c-sharp-webscraper.AssemblyInfoInputs.cache
+C:\Developer\scratch-pad\Dot-Net\c-sharp-webscraper\obj\Debug\netcoreapp3.1\c-sharp-webscraper.AssemblyInfo.cs
+C:\Developer\scratch-pad\Dot-Net\c-sharp-webscraper\obj\Debug\netcoreapp3.1\c-sharp-webscraper.csproj.CoreCompileInputs.cache
+C:\Developer\scratch-pad\Dot-Net\c-sharp-webscraper\obj\Debug\netcoreapp3.1\c-sharp-webscraper.dll
+C:\Developer\scratch-pad\Dot-Net\c-sharp-webscraper\obj\Debug\netcoreapp3.1\c-sharp-webscraper.pdb
+C:\Developer\scratch-pad\Dot-Net\c-sharp-webscraper\obj\Debug\netcoreapp3.1\c-sharp-webscraper.genruntimeconfig.cache
