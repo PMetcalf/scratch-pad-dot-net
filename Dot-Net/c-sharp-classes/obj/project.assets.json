@@ -8,23 +8,25 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\paulm\\.nuget\\packages\\": {},
-    "D:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\ASUS-PC\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Developer Area\\scratch-pad\\Dot-Net\\c-sharp-classes\\c-sharp-classes.csproj",
+      "projectUniqueName": "C:\\Developer\\scratch-pad\\Dot-Net\\c-sharp-classes\\c-sharp-classes.csproj",
       "projectName": "c-sharp-classes",
-      "projectPath": "D:\\Developer Area\\scratch-pad\\Dot-Net\\c-sharp-classes\\c-sharp-classes.csproj",
-      "packagesPath": "C:\\Users\\paulm\\.nuget\\packages\\",
-      "outputPath": "D:\\Developer Area\\scratch-pad\\Dot-Net\\c-sharp-classes\\obj\\",
+      "projectPath": "C:\\Developer\\scratch-pad\\Dot-Net\\c-sharp-classes\\c-sharp-classes.csproj",
+      "packagesPath": "C:\\Users\\ASUS-PC\\.nuget\\packages\\",
+      "outputPath": "C:\\Developer\\scratch-pad\\Dot-Net\\c-sharp-classes\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\paulm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ASUS-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],

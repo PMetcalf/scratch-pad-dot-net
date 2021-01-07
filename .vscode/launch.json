@@ -10,11 +10,11 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/Dot-Net/c-sharp-classes/bin/Debug/netcoreapp3.1/c-sharp-classes.dll",
+            "program": "${workspaceFolder}/Dot-Net/c-sharp-webscraper/bin/Debug/netcoreapp3.1/c-sharp-webscraper.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/Dot-Net/c-sharp-classes",
+            "cwd": "${workspaceFolder}/Dot-Net/c-sharp-webscraper",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
-            "console": "internalConsole",
+            "console": "externalTerminal",
             "stopAtEntry": false
         },
         {

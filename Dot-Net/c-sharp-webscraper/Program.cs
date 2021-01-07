@@ -7,6 +7,7 @@ namespace c_sharp_webscraper
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            Console.ReadLine();
         }
     }
 }
