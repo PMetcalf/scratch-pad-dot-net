@@ -34,7 +34,13 @@ namespace c_sharp_webscraper
             {
                 if(link.Attributes["href"].Value.Contains(".html"))
                 {
-                    homePageLinks.Add(link.Attributes["href"].Value);
+                    try
+                    {
+                        homePageLinks.Add(link.Attributes["href"].Value);
+                    }
+                    catch
+                    {
+                    }
                 }
             }
 
