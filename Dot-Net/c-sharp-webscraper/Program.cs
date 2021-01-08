@@ -12,8 +12,10 @@ namespace c_sharp_webscraper
         static ScrapingBrowser _browser = new ScrapingBrowser();
 
         static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
+        {   
+            var mainPageLinks = GetMainPageLinks("https://www.indeed.co.uk/jobs?q=data+scientist&l=liverpool");
+
+            Console.ReadLine();
         }
 
         // Returns links to jobs on a page

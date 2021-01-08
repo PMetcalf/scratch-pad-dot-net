@@ -3637,7 +3637,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "ScrapySharp >= *"
+      "ScrapySharp >= 3.0.0"
     ]
   },
   "packageFolders": {
@@ -3686,7 +3686,7 @@
         "dependencies": {
           "ScrapySharp": {
             "target": "Package",
-            "version": "[*, )"
+            "version": "[3.0.0, )"
           }
         },
         "imports": [

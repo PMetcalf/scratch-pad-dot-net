@@ -45,7 +45,7 @@
           "dependencies": {
             "ScrapySharp": {
               "target": "Package",
-              "version": "[*, )"
+              "version": "[3.0.0, )"
             }
           },
           "imports": [
