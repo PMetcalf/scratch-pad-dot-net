@@ -16,7 +16,31 @@ namespace c_sharp_webscraper
             Console.WriteLine("Hello World!");
         }
 
-        // Method returns HTML
+        // Returns links to jobs on a page
+        static List<String> GetMainPageLinks(string url)
+        {
+            var homePageLinks = new List<string>();
+            
+            // Retrieve the html
+            var html = GetHtml(url);
+
+            // Filter for appropriate tag
+            var links = html.CssSelect("a");
+
+            // Check links and add if linked to job
+            foreach(var link in links)
+            {
+                if(link.Attributes["href"].Value.Contains(".html"))
+                {
+                    homePageLinks.Add(link.Attributes["href"].Value);
+                }
+            }
+
+            // Return links
+            return homePageLinks;
+        }
+
+        // Returns HTML of particular webpage.
         static HtmlNode GetHtml(string url)
         {
             WebPage webPage = _browser.NavigateToPage(new Uri(url));
