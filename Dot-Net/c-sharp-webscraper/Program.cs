@@ -74,7 +74,13 @@ namespace c_sharp_webscraper
                 var description = htmlNode.OwnerDocument.DocumentNode.SelectSingleNode("//html/body/section/section/section/section").InnerText;
 
                 pageDetails.description = description.Replace("\n        \n            QR Code Link to This Post\n            \n        \n", "");
+            
+                pageDetails.url = url;
+
+                listPageDetails.Add(pageDetails);
             }
+
+            return listPageDetails;
         }
     }
 
