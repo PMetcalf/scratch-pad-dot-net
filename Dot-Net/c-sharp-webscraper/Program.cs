@@ -13,8 +13,8 @@ namespace c_sharp_webscraper
 
         static void Main(string[] args)
         {   
-            // var url1 = "https://newyork.craigslist.org/d/computer-gigs/search/cpg";
-            var url = "https://www.indeed.co.uk/jobs?q=data+scientist&l=liverpool";
+            var url = "https://newyork.craigslist.org/d/computer-gigs/search/cpg";
+            //var url = "https://www.indeed.co.uk/jobs?q=data+scientist&l=liverpool";
 
             var mainPageLinks = GetMainPageLinks(url);
 
@@ -32,22 +32,20 @@ namespace c_sharp_webscraper
             // Filter for appropriate tag
             var links = html.CssSelect("a");
 
-            // Check links and add if linked to job
-            foreach(var link in links)
+            try
             {
-                try
+                // Check links and add if linked to job
+                foreach(var link in links)
                 {
                     if(link.Attributes["href"].Value.Contains(".html"))
                     {
                         homePageLinks.Add(link.Attributes["href"].Value);
                     }
                 }
-                catch
-                {
-                }
-
             }
-
+            catch
+            {
+            }
             // Return links
             return homePageLinks;
         }
