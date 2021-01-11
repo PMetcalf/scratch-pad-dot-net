@@ -32,16 +32,17 @@ namespace c_sharp_webscraper
             // Check links and add if linked to job
             foreach(var link in links)
             {
-                if(link.Attributes["href"].Value.Contains(".html"))
+                try
                 {
-                    try
+                    if(link.Attributes["href"].Value.Contains(".html"))
                     {
                         homePageLinks.Add(link.Attributes["href"].Value);
                     }
-                    catch
-                    {
-                    }
                 }
+                catch
+                {
+                }
+
             }
 
             // Return links
