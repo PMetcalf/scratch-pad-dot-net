@@ -13,7 +13,10 @@ namespace c_sharp_webscraper
 
         static void Main(string[] args)
         {   
-            var mainPageLinks = GetMainPageLinks("https://www.indeed.co.uk/jobs?q=data+scientist&l=liverpool");
+            // var url1 = "https://newyork.craigslist.org/d/computer-gigs/search/cpg";
+            var url = "https://www.indeed.co.uk/jobs?q=data+scientist&l=liverpool";
+
+            var mainPageLinks = GetMainPageLinks(url);
 
             Console.ReadLine();
         }
