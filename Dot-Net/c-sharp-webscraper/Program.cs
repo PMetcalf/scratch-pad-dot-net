@@ -57,6 +57,25 @@ namespace c_sharp_webscraper
 
             return webPage.Html;
         }
+
+        // Returns list of page details from HTML.
+        static List<PageDetails> GetPageDetails(List<string> urls)
+        {
+            var listPageDetails = new List<PageDetails>();
+
+            foreach (var url in urls)
+            {
+                var htmlNode = GetHtml(url);
+
+                var pageDetails = new PageDetails();
+
+                pageDetails.title = htmlNode.OwnerDocument.DocumentNode.SelectSingleNode("//html/head/title").InnerText;
+                
+                var description = htmlNode.OwnerDocument.DocumentNode.SelectSingleNode("//html/body/section/section/section/section").InnerText;
+
+                pageDetails.description = description.Replace("\n        \n            QR Code Link to This Post\n            \n        \n", "");
+            }
+        }
     }
 
     public class PageDetails
