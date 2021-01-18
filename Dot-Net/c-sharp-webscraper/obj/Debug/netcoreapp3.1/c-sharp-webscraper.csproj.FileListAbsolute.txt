@@ -33,3 +33,6 @@ C:\Developer\scratch-pad\Dot-Net\c-sharp-webscraper\obj\Debug\netcoreapp3.1\c-sh
 C:\Developer\scratch-pad\Dot-Net\c-sharp-webscraper\obj\Debug\netcoreapp3.1\c-sharp-webscraper.pdb
 C:\Developer\scratch-pad\Dot-Net\c-sharp-webscraper\obj\Debug\netcoreapp3.1\c-sharp-webscraper.genruntimeconfig.cache
 C:\Developer\scratch-pad\Dot-Net\c-sharp-webscraper\obj\Debug\netcoreapp3.1\c-sharp-webscraper.csproj.CopyComplete
+C:\Developer\scratch-pad\Dot-Net\c-sharp-webscraper\bin\Debug\netcoreapp3.1\HtmlAgilityPack.dll
+C:\Developer\scratch-pad\Dot-Net\c-sharp-webscraper\obj\Debug\netcoreapp3.1\c-sharp-webscraper.csproj.CoreCompileInputs.cache
+C:\Developer\scratch-pad\Dot-Net\c-sharp-webscraper\obj\Debug\netcoreapp3.1\c-sharp-webscraper.MvcApplicationPartsAssemblyInfo.cache
