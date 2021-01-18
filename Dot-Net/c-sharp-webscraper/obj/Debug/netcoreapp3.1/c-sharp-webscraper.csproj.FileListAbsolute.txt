@@ -12,8 +12,6 @@ C:\Developer\scratch-pad\Dot-Net\c-sharp-webscraper\bin\Debug\netcoreapp3.1\c-sh
 C:\Developer\scratch-pad\Dot-Net\c-sharp-webscraper\obj\Debug\netcoreapp3.1\c-sharp-webscraper.csprojAssemblyReference.cache
 C:\Developer\scratch-pad\Dot-Net\c-sharp-webscraper\obj\Debug\netcoreapp3.1\c-sharp-webscraper.AssemblyInfoInputs.cache
 C:\Developer\scratch-pad\Dot-Net\c-sharp-webscraper\obj\Debug\netcoreapp3.1\c-sharp-webscraper.AssemblyInfo.cs
-C:\Developer\scratch-pad\Dot-Net\c-sharp-webscraper\obj\Debug\netcoreapp3.1\c-sharp-webscraper.csproj.CoreCompileInputs.cache
-C:\Developer\scratch-pad\Dot-Net\c-sharp-webscraper\obj\Debug\netcoreapp3.1\c-sharp-webscraper.MvcApplicationPartsAssemblyInfo.cache
 C:\Developer\scratch-pad\Dot-Net\c-sharp-webscraper\obj\Debug\netcoreapp3.1\c-sharp-webscraper.RazorAssemblyInfo.cache
 C:\Developer\scratch-pad\Dot-Net\c-sharp-webscraper\obj\Debug\netcoreapp3.1\c-sharp-webscraper.RazorAssemblyInfo.cs
 C:\Developer\scratch-pad\Dot-Net\c-sharp-webscraper\obj\Debug\netcoreapp3.1\c-sharp-webscraper.TagHelpers.input.cache

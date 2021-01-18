@@ -5,4 +5,8 @@
     <RootNamespace>c_sharp_webscraper</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.29" />
+  </ItemGroup>
+
 </Project>

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ekko3k3hv58yU8YfoNoCukiRekur7dWIt8MYphDwzm3tiZkTgLLtxZWM3RlI1L75z4Otp8g+UaoFldMTel4vKw==",
+  "dgSpecHash": "2JVRsG5HEu9+fjvFdavOa7azXNihiXtV4QAuF0Z4vZypaC675f+IuZwhA0VKDIX1mXTbx6G+wTGtoOWlUYIuvA==",
   "success": true,
   "projectFilePath": "C:\\Developer\\scratch-pad\\Dot-Net\\c-sharp-webscraper\\c-sharp-webscraper.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ASUS-PC\\.nuget\\packages\\htmlagilitypack\\1.11.29\\htmlagilitypack.1.11.29.nupkg.sha512"
+  ],
   "logs": []
 }
