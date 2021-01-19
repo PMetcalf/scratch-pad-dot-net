@@ -27,10 +27,14 @@ namespace c_sharp_webscraper.Controllers
             HttpClient client = new HttpClient();
 
             // Force connection to use TLS 1.3 so that HTTPS handshake can complete
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls13;
 
             // Clear headers, should you add your own
+            client.DefaultRequestHeaders.Accept.Clear();
 
             // Await the response
+            var response = client.GetStringAsync(fullUrl);
+            return await response;
         }
 
         public IActionResult Index()
