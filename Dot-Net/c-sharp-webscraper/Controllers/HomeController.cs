@@ -29,7 +29,7 @@ namespace c_sharp_webscraper.Controllers
             // Force connection to use TLS 1.3 so that HTTPS handshake can complete
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls13;
 
-            // Clear headers, should you add your own
+            // Clear headers, so bespoke headers can be added if requested
             client.DefaultRequestHeaders.Accept.Clear();
 
             // Await the response
@@ -40,6 +40,9 @@ namespace c_sharp_webscraper.Controllers
         public IActionResult Index()
         {
             string url = "https://en.wikipedia.org/wiki/List_of_programmers";
+
+            var response = CallUrl(url).Result;
+
             return View();
         }
 
