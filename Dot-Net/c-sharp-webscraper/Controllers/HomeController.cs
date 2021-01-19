@@ -1,11 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
+﻿using System.Diagnostics;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using c_sharp_webscraper.Models;
+using HtmlAgilityPack;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Net;
+using System.Text;
+using System.IO;
 
 namespace c_sharp_webscraper.Controllers
 {
@@ -21,6 +24,7 @@ namespace c_sharp_webscraper.Controllers
         private static async Task<string> CallUrl(string fullUrl)
         {
             // Create Http client
+            HttpClient client = new HttpClient();
 
             // Force connection to use TLS 1.3 so that HTTPS handshake can complete
 
