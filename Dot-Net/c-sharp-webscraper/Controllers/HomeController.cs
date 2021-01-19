@@ -41,12 +41,26 @@ namespace c_sharp_webscraper.Controllers
 
         private List<string> ParseHtml(string html)
         {
-            // Drop raw html into a Doc format
+            // Drop raw html links into Doc format
             HtmlDocument htmlDoc = new HtmlDocument();
             htmlDoc.LoadHtml(html);
 
+            // Use linq to filter out the table of contents links we don't want 
             var programmerLinks = htmlDoc.DocumentNode.Descendants("li").
                 Where(node => !node.GetAttributeValue("class", "").Contains("tocsection")).ToList();
+
+            List<string> wikiLink = new List<string>();
+
+            // Parse the link and construct / return the absolute url for the reader
+            foreach (var link in programmerLinks)
+            {
+                if (link.FirstChild.Attributes.Count > 0)
+                {
+                    wikiLink.Add("https://en.wikipedia.org/" + link.FirstChild.Attributes[0].Value);
+                }
+            }
+
+            return wikiLink;
         }
 
         public IActionResult Index()
