@@ -9,6 +9,8 @@ using System.Net.Http.Headers;
 using System.Net;
 using System.Text;
 using System.IO;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace c_sharp_webscraper.Controllers
 {
@@ -35,6 +37,16 @@ namespace c_sharp_webscraper.Controllers
             // Await the response
             var response = client.GetStringAsync(fullUrl);
             return await response;
+        }
+
+        private List<string> ParseHtml(string html)
+        {
+            // Drop raw html into a Doc format
+            HtmlDocument htmlDoc = new HtmlDocument();
+            htmlDoc.LoadHtml(html);
+
+            var programmerLinks = htmlDoc.DocumentNode.Descendants("li").
+                Where(node => !node.GetAttributeValue("class", "").Contains("tocsection")).ToList();
         }
 
         public IActionResult Index()
