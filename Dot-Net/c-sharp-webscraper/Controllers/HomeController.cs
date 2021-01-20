@@ -7,6 +7,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Net.Http;
 using System.Net;
+using PuppeteerSharp;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -21,6 +22,22 @@ namespace c_sharp_webscraper.Controllers
             _logger = logger;
         }
 
+        public async Task<IActionResult> Index()
+        {
+            string fullUrl = "https://en.wikipedia.org/wiki/List_of_programmers";
+
+            List<string> programmerLinks = new List<string>();
+
+            // Build browser proxy to collect data
+
+            // Use browser proxy to collect links
+
+            // Parse links
+
+            return View();
+        }
+
+        /*
         public IActionResult Index()
         {
             string url = "https://en.wikipedia.org/wiki/List_of_programmers";
@@ -31,6 +48,7 @@ namespace c_sharp_webscraper.Controllers
 
             return View();
         }
+        */
 
         public IActionResult Privacy()
         {
