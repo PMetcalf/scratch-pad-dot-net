@@ -49,6 +49,7 @@ namespace c_sharp_webscraper.Controllers
             var programmerLinks = htmlDoc.DocumentNode.Descendants("li").
                 Where(node => !node.GetAttributeValue("class", "").Contains("tocsection")).ToList();
 
+            // Create list to contain the links
             List<string> wikiLink = new List<string>();
 
             // Parse the link and construct / return the absolute url for the reader
@@ -61,6 +62,22 @@ namespace c_sharp_webscraper.Controllers
             }
 
             return wikiLink;
+        }
+
+        private void WriteToCsv(List<string> links)
+        {
+            StringBuilder sb = new StringBuilder();
+
+            // Add links to stringbuilder
+            foreach (var link in links)
+            {
+                sb.Append(link);
+            }
+
+            string filepath = @"C:\Developer\scratch-pad\Dot-Net\c-sharp-webscraper\Other\links.csv";
+
+            // Write stringbuilder to csv file
+            System.IO.File.WriteAllText(filepath, sb.ToString());
         }
 
         public IActionResult Index()
