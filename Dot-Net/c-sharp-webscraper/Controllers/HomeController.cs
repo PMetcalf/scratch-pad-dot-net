@@ -28,6 +28,8 @@ namespace c_sharp_webscraper.Controllers
             string url = "https://en.wikipedia.org/wiki/List_of_programmers";
 
             var response = CallUrl(url).Result;
+            var linkList = ParseHtml(response);
+            WriteToCsv(linkList);
 
             return View();
         }
