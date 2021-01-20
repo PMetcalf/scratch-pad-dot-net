@@ -1,16 +1,14 @@
-﻿using System.Diagnostics;
-using System.Threading.Tasks;
+﻿using c_sharp_webscraper.Models;
+using HtmlAgilityPack;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using c_sharp_webscraper.Models;
-using HtmlAgilityPack;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
 using System.Net.Http;
-using System.Net.Http.Headers;
 using System.Net;
 using System.Text;
-using System.IO;
-using System.Collections.Generic;
-using System.Linq;
+using System.Threading.Tasks;
 
 namespace c_sharp_webscraper.Controllers
 {
