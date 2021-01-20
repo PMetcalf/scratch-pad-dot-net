@@ -23,6 +23,27 @@ namespace c_sharp_webscraper.Controllers
             _logger = logger;
         }
 
+        public IActionResult Index()
+        {
+            string url = "https://en.wikipedia.org/wiki/List_of_programmers";
+
+            var response = CallUrl(url).Result;
+
+            return View();
+        }
+
+        public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+
         private static async Task<string> CallUrl(string fullUrl)
         {
             // Create Http client
@@ -78,26 +99,6 @@ namespace c_sharp_webscraper.Controllers
 
             // Write stringbuilder to csv file
             System.IO.File.WriteAllText(filepath, sb.ToString());
-        }
-
-        public IActionResult Index()
-        {
-            string url = "https://en.wikipedia.org/wiki/List_of_programmers";
-
-            var response = CallUrl(url).Result;
-
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }
