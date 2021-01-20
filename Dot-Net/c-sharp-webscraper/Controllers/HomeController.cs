@@ -48,6 +48,8 @@ namespace c_sharp_webscraper.Controllers
                 programmerLinks.Add(url);
             }
 
+            WriteToCsv(programmerLinks);
+
             return View();
         }
 
