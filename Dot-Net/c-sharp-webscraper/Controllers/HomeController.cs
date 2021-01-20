@@ -32,7 +32,7 @@ namespace c_sharp_webscraper.Controllers
             var options = new LaunchOptions()
             {
                 Headless = true,
-                ExecutablePath = @"C:/Programe Files (x86)/Google/Chrome/Application/chrome.exe"
+                ExecutablePath = @"C:/Program Files (x86)/Google/Chrome/Application/chrome.exe"
             };
             var browser = await Puppeteer.LaunchAsync(options, null, Product.Chrome);
             var page = await browser.NewPageAsync();
@@ -43,6 +43,10 @@ namespace c_sharp_webscraper.Controllers
             var urls = await page.EvaluateExpressionAsync<string[]>(links);
 
             // Parse links
+            foreach (string url in urls)
+            {
+                programmerLinks.Add(url);
+            }
 
             return View();
         }
