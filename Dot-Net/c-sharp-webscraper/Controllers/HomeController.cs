@@ -29,8 +29,18 @@ namespace c_sharp_webscraper.Controllers
             List<string> programmerLinks = new List<string>();
 
             // Build browser proxy to collect data
+            var options = new LaunchOptions()
+            {
+                Headless = true,
+                ExecutablePath = @"C:/Programe Files (x86)/Google/Chrome/Application/chrome.exe"
+            };
+            var browser = await Puppeteer.LaunchAsync(options, null, Product.Chrome);
+            var page = await browser.NewPageAsync();
 
             // Use browser proxy to collect links
+            await page.GoToAsync(fullUrl);
+            var links = @"Array.from(document.querySelectorAll('a')).map(a => a.href);";
+            var urls = await page.EvaluateExpressionAsync<string[]>(links);
 
             // Parse links
 
