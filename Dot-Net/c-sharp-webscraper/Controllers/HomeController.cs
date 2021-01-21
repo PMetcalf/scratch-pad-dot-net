@@ -31,8 +31,15 @@ namespace c_sharp_webscraper.Controllers
             List<string> programmerLinks = new List<string>();
 
             // Build browser proxy to collect links
+            var options = new ChromeOptions()
+            {
+                BinaryLocation = @"C:/Program Files (x86)/Google/Chrome/Application/chrome.exe"
+            };
+            options.AddArguments(new List<string>() { "headless", "disable-gpu" });
+            var browser = new ChromeDriver(options);
 
             // Use browser proxy to collect links
+
 
             // Parse links
 
