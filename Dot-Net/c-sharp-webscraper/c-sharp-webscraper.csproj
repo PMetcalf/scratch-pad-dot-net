@@ -8,6 +8,8 @@
   <ItemGroup>
     <PackageReference Include="HtmlAgilityPack" Version="1.11.29" />
     <PackageReference Include="PuppeteerSharp" Version="2.0.4" />
+    <PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="88.0.4324.9600" />
   </ItemGroup>
 
   <ItemGroup>

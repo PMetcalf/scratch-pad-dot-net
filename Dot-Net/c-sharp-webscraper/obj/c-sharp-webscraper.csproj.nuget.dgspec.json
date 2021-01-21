@@ -50,6 +50,14 @@
             "PuppeteerSharp": {
               "target": "Package",
               "version": "[2.0.4, )"
+            },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[3.141.0, )"
+            },
+            "Selenium.WebDriver.ChromeDriver": {
+              "target": "Package",
+              "version": "[88.0.4324.9600, )"
             }
           },
           "imports": [

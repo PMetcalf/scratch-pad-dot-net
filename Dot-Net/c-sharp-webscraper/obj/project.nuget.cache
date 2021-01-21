@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Nl6B+ptNzKt7gZiDqInJMUzJy+k/BYKhhEJz68W5ShvCMbEmAIVh+Rw8LWYnbli8Vdr1PT6zR+ePkkEgJB76KA==",
+  "dgSpecHash": "TbTdh4+VfbucGFjL4PT7Y7Oje/s0+hG3OCkP/ecaHpqg5dFhuaUZa0ggKpA4C/5xKcYX8u8FGxjJo+bsJ4JPXg==",
   "success": true,
   "projectFilePath": "C:\\Developer\\scratch-pad\\Dot-Net\\c-sharp-webscraper\\c-sharp-webscraper.csproj",
   "expectedPackageFiles": [
@@ -36,6 +36,8 @@
     "C:\\Users\\ASUS-PC\\.nuget\\packages\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\ASUS-PC\\.nuget\\packages\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\ASUS-PC\\.nuget\\packages\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
+    "C:\\Users\\ASUS-PC\\.nuget\\packages\\selenium.webdriver\\3.141.0\\selenium.webdriver.3.141.0.nupkg.sha512",
+    "C:\\Users\\ASUS-PC\\.nuget\\packages\\selenium.webdriver.chromedriver\\88.0.4324.9600\\selenium.webdriver.chromedriver.88.0.4324.9600.nupkg.sha512",
     "C:\\Users\\ASUS-PC\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\ASUS-PC\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
     "C:\\Users\\ASUS-PC\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
