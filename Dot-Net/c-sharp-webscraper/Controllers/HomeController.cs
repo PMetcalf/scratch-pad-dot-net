@@ -24,7 +24,7 @@ namespace c_sharp_webscraper.Controllers
             _logger = logger;
         }
 
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
             string fullUrl = "http://en.wikipedia.org/wiki/List_of_programmers";
 
@@ -39,9 +39,16 @@ namespace c_sharp_webscraper.Controllers
             var browser = new ChromeDriver(options);
 
             // Use browser proxy to collect links
-
+            browser.Navigate().GoToUrl(fullUrl);
+            var links = browser.FindElementsByTagName("a");
 
             // Parse links
+            foreach (var url in links)
+            {
+                programmerLinks.Add(url.GetAttribute("href"));
+            }
+
+            WriteToCsv(programmerLinks);
 
             return View();
         }
