@@ -26,7 +26,17 @@ namespace c_sharp_webscraper.Controllers
 
         public async Task<IActionResult> Index()
         {
+            string fullUrl = "http://en.wikipedia.org/wiki/List_of_programmers";
 
+            List<string> programmerLinks = new List<string>();
+
+            // Build browser proxy to collect links
+
+            // Use browser proxy to collect links
+
+            // Parse links
+
+            return View();
         }
 
         /*
