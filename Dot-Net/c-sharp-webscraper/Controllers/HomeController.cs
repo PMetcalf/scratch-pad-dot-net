@@ -26,6 +26,12 @@ namespace c_sharp_webscraper.Controllers
 
         public async Task<IActionResult> Index()
         {
+
+        }
+
+        /*
+        public async Task<IActionResult> Index()
+        {
             string fullUrl = "https://en.wikipedia.org/wiki/List_of_programmers";
 
             List<string> programmerLinks = new List<string>();
@@ -55,7 +61,6 @@ namespace c_sharp_webscraper.Controllers
             return View();
         }
 
-        /*
         public IActionResult Index()
         {
             string url = "https://en.wikipedia.org/wiki/List_of_programmers";
