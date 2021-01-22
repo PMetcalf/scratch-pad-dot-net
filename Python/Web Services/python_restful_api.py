@@ -5,6 +5,7 @@ RESTful API sandbox with request module.
 '''
 
 # Module Imports
+from datetime import datetime
 import json
 import requests
 
@@ -53,3 +54,11 @@ for data in pass_times:
 
 # Prints times as epochs
 print(risetimes)
+
+# Convert epochs time
+times = []
+
+for rt in risetimes:
+    time = datetime.fromtimestamp(rt)
+    times.append(time)
+    print(time)
