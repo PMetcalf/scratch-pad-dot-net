@@ -43,3 +43,13 @@ json_print(passover_response.json())
 # Extract passover times
 pass_times = passover_response.json()['response']
 json_print(pass_times)
+
+# Extract rise times from passover data
+risetimes = []
+
+for data in pass_times:
+    time = data['risetime']
+    risetimes.append(time)
+
+# Prints times as epochs
+print(risetimes)
