@@ -39,3 +39,7 @@ passover_response = requests.get(passover_url, params = lat_long_params)
 # Print passover response
 print(passover_response.status_code)
 json_print(passover_response.json())
+
+# Extract passover times
+pass_times = passover_response.json()['response']
+json_print(pass_times)
