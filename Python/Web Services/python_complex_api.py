@@ -36,8 +36,15 @@ def json_print(obj):
 #--- Retrieving Paginated Data --- 
 
 # Initialise list for results
-result = []
+results = []
 
-response = lastfm_get({
-    'method': 'chart.gettopartists'
-})
+# Set initial page and high total number
+page = 1
+total_pages = 99999
+
+# Retrieve paginated data
+while page > total_pages:
+
+    response = lastfm_get({'method': 'chart.gettopartists'})
+
+
