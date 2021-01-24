@@ -12,10 +12,18 @@ APPLICATION_NAME = "API Sandbox App"
 API_KEY = "ad927174be69fdf7dbe167638cbc1184"
 REGISTERED_TO = "paul_metcalf_uk"
 USER_AGENT = "CloudforestTech"
-last_fm_url = "http://my-api-url"
+last_fm_url = "http://ws.audioscrobbler.com/2.0/"
 
 headers = {
-    'user-agent': 'CloudforestTech'
+    'user-agent': USER_AGENT
 }
 
-response = requests.get(last_fm_url, headers = headers)
+payload = {
+    'api_key': API_KEY,
+    'method': 'chart.gettopartists',
+    'format': 'json'
+}
+
+response = requests.get(last_fm_url, headers = headers, params = payload)
+
+print(response.status_code)
