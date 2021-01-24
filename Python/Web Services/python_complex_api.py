@@ -5,6 +5,7 @@ Workiing with a RESTful API with authentication, rate limiting and pagination.
 '''
 
 # Module Imports
+import json
 import requests
 
 # Constants
@@ -27,8 +28,17 @@ def lastfm_get(payload):
     response = requests.get(last_fm_url, headers = headers, params = payload)
     return response
 
+def json_print(obj):
+    # Create a formatted string of a json object
+    text = json.dumps(obj, sort_keys = True, indent = 4)
+    print(text)
+
+#--- Main Request Flow --- 
+
 response = lastfm_get({
     'method': 'chart.gettopartists'
 })
 
 print(response.status_code)
+
+json_print(response.json())
