@@ -47,4 +47,10 @@ while page > total_pages:
 
     response = lastfm_get({'method': 'chart.gettopartists'})
 
+    # Append results to list
+    results.append(response.json())
+
+    # Increment page
+    page += 1
+
 
