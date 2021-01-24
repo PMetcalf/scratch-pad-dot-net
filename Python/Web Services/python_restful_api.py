@@ -1,7 +1,7 @@
 '''
 Python RESTful API
 
-RESTful API sandbox with request module.
+Working with a simple RESTful API sandbox with request module.
 '''
 
 # Module Imports
