@@ -33,12 +33,11 @@ def json_print(obj):
     text = json.dumps(obj, sort_keys = True, indent = 4)
     print(text)
 
-#--- Main Request Flow --- 
+#--- Retrieving Paginated Data --- 
+
+# Initialise list for results
+result = []
 
 response = lastfm_get({
     'method': 'chart.gettopartists'
 })
-
-print(response.status_code)
-
-json_print(response.json())
