@@ -7,6 +7,7 @@ Workiing with a RESTful API with authentication, rate limiting and pagination.
 # Module Imports
 from IPython.core.display import clear_output
 import json
+import pandas as pd
 import requests
 import requests_cache
 import time
@@ -36,7 +37,7 @@ def json_print(obj):
     text = json.dumps(obj, sort_keys = True, indent = 4)
     print(text)
 
-#--- Retrieving Paginated Data --- 
+# --- Retrieving Paginated Data --- 
 
 # Install cache
 cache_string = r'C:\Developer\scratch-pad\Python\Web Services\response_cache'
@@ -82,3 +83,5 @@ while page <= total_pages:
 
     # Increment page
     page += 1
+
+# --- Processing Data with Pandas ---
