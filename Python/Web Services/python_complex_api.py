@@ -12,10 +12,10 @@ import requests_cache
 import time
 
 # Constants
-APPLICATION_NAME="API Sandbox App"
-API_KEY="ad927174be69fdf7dbe167638cbc1184"
-REGISTERED_TO="paul_metcalf_uk"
-USER_AGENT="CloudforestTech"
+APPLICATION_NAME = "API Sandbox App"
+API_KEY = "ad927174be69fdf7dbe167638cbc1184"
+REGISTERED_TO = "paul_metcalf_uk"
+USER_AGENT = "CloudforestTech"
 
 def lastfm_get(payload):
 
@@ -39,7 +39,8 @@ def json_print(obj):
 #--- Retrieving Paginated Data --- 
 
 # Install cache
-requests_cache.install_cache()
+cache_string = r'C:\Developer\scratch-pad\Python\Web Services\response_cache'
+requests_cache.install_cache(cache_name = cache_string)
 
 # Initialise list for results
 results = []
@@ -81,5 +82,3 @@ while page <= total_pages:
 
     # Increment page
     page += 1
-
-
