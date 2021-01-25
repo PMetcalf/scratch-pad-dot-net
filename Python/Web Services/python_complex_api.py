@@ -99,3 +99,7 @@ r0_df.head()
 frames = [pd.DataFrame(r.json()['artists']['artist']) for r in responses]
 artists = pd.concat(frames)
 artists.head()
+
+# Remove images column
+artists = artists.drop('image', axis = 1)
+artists.head()
