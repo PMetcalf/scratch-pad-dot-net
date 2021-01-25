@@ -5,9 +5,11 @@ Workiing with a RESTful API with authentication, rate limiting and pagination.
 '''
 
 # Module Imports
+from IPython.core.display import clear_output
 import json
 import requests
 import requests_cache
+import time
 
 # Constants
 APPLICATION_NAME = "API Sandbox App"
@@ -44,9 +46,19 @@ page = 1
 total_pages = 99999
 
 # Retrieve paginated data
-while page > total_pages:
+while page <= total_pages:
 
-    response = lastfm_get({'method': 'chart.gettopartists'})
+    payload = {
+        'method': 'chart.gettopartists',
+        'limit': 500,
+        'page': page
+    }
+
+    print("Requesting page {}/{}".format(page, total_pages))
+    clear_output(wait = True)
+
+    # Get the API response
+    response = lastfm_get(payload)
 
     # Append results to list
     results.append(response.json())
