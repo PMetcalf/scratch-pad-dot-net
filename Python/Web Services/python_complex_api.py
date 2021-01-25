@@ -94,3 +94,8 @@ r0_artists = r0_json['artists']['artist']
 # Create dataframe from filtered response
 r0_df = pd.DataFrame(r0_artists)
 r0_df.head()
+
+# Create single df from list of dfs
+frames = [pd.DataFrame(r.json()['artists']['artist']) for r in responses]
+artists = pd.concat(frames)
+artists.head()
