@@ -68,10 +68,16 @@ while page <= total_pages:
         print(response.text)
         break
 
-    # Extract pagination 
+    # Extract pagination
+    page = int(response.json()['artists']['@attr']['page'])
+    total_pages = int(response.json()['artists']['@attr']['totalPages']) 
 
     # Append results to list
-    results.append(response.json())
+    results.append(response)
+
+    # Wait for a period if not cached result
+    if not getattr(response, 'from_cache', False):
+        time.sleep(0.25)
 
     # Increment page
     page += 1
