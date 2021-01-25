@@ -38,6 +38,9 @@ def json_print(obj):
 
 #--- Retrieving Paginated Data --- 
 
+# Install cache
+requests_cache.install_cache()
+
 # Initialise list for results
 results = []
 
@@ -59,6 +62,13 @@ while page <= total_pages:
 
     # Get the API response
     response = lastfm_get(payload)
+
+    # Error handling
+    if response.status_code != 200:
+        print(response.text)
+        break
+
+    # Extract pagination 
 
     # Append results to list
     results.append(response.json())
