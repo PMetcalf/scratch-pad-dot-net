@@ -85,3 +85,12 @@ while page <= total_pages:
     page += 1
 
 # --- Processing Data with Pandas ---
+
+# Filter response
+r0 = responses[0]
+r0_json = r0.json()
+r0_artists = r0_json['artists']['artist']
+
+# Create dataframe from filtered response
+r0_df = pd.DataFrame(r0_artists)
+r0_df.head()
