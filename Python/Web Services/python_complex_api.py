@@ -37,6 +37,17 @@ def json_print(obj):
     text = json.dumps(obj, sort_keys = True, indent = 4)
     print(text)
 
+# --- Getting Extra Data with Augmented API ---
+
+response = lastfm_get({
+    'method': 'artist.getTopTags',
+    'artist': 'Lana Del Rey'
+})
+
+json_print(response.json())
+
+
+'''
 # --- Retrieving Paginated Data --- 
 
 # Install cache
@@ -110,3 +121,5 @@ artists = artists.drop_duplicates().reset_index(drop = True)
 # Peek data
 artists.info()
 artists.describe()
+
+'''
