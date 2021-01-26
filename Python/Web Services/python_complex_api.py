@@ -39,13 +39,15 @@ def json_print(obj):
 
 # --- Getting Extra Data with Augmented API ---
 
+# Get response from augmented endpoint
 response = lastfm_get({
     'method': 'artist.getTopTags',
     'artist': 'Lana Del Rey'
 })
 
-json_print(response.json())
-
+# List top three tags
+top_three_tags = [tag['name'] for tag in response.json()['toptags']['tag'][:3]]
+print(top_three_tags)
 
 '''
 # --- Retrieving Paginated Data --- 
