@@ -11,6 +11,7 @@ import pandas as pd
 import requests
 import requests_cache
 import time
+from tqdm import tqdm
 
 # Constants
 APPLICATION_NAME = "API Sandbox App"
@@ -37,19 +38,28 @@ def json_print(obj):
     text = json.dumps(obj, sort_keys = True, indent = 4)
     print(text)
 
-# --- Getting Extra Data with Augmented API ---
+def lookup_tags(artist):
 
-# Get response from augmented endpoint
-response = lastfm_get({
-    'method': 'artist.getTopTags',
-    'artist': 'Lana Del Rey'
-})
+    # Get response
+    response = lastfm_get({
+        'method': 'artist.getTopTags',
+        'artist': artist
+    })
 
-# List top three tags
-top_three_tags = [tag['name'] for tag in response.json()['toptags']['tag'][:3]]
-print(top_three_tags)
+    # If there's an error, just return nothing
+    if response.status_code != 200:
+        return None
 
-'''
+    # Extract the top three tags and turn them into a string
+    top_three_tags = [tag['name'] for tag in response.json()['toptags']['tag'][:3]]
+    tags_str = ', '.join(top_three_tags)
+
+    # Limit rate
+    if not getattr(response, 'from_cache', False):
+        time.sleep(0.25)
+
+    return tags_str
+
 # --- Retrieving Paginated Data --- 
 
 # Install cache
@@ -124,4 +134,6 @@ artists = artists.drop_duplicates().reset_index(drop = True)
 artists.info()
 artists.describe()
 
-'''
+# Lookup tags for each artist, viewing progress with tqdm
+tqdm.pandas()
+artists['tags'] = artists['name'].progress_apply(lookup_tags)
