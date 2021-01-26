@@ -14,10 +14,10 @@ import time
 from tqdm import tqdm
 
 # Constants
-APPLICATION_NAME = "API Sandbox App"
-API_KEY = "ad927174be69fdf7dbe167638cbc1184"
-REGISTERED_TO = "paul_metcalf_uk"
-USER_AGENT = "CloudforestTech"
+APPLICATION_NAME="API Sandbox App"
+API_KEY="ad927174be69fdf7dbe167638cbc1184"
+REGISTERED_TO="paul_metcalf_uk"
+USER_AGENT="CloudforestTech"
 
 def lastfm_get(payload):
 
@@ -130,10 +130,21 @@ artists.head()
 # Remove duplicates
 artists = artists.drop_duplicates().reset_index(drop = True)
 
+# Lookup tags for each artist, viewing progress with tqdm
+tqdm.pandas()
+artists['tags'] = artists['name'].progress_apply(lookup_tags)
+
 # Peek data
 artists.info()
 artists.describe()
 
-# Lookup tags for each artist, viewing progress with tqdm
-tqdm.pandas()
-artists['tags'] = artists['name'].progress_apply(lookup_tags)
+# Convert datatypes
+artists[["playcount", "listeners"]] = artists[["playcount", "listeners"]].astype(int)
+
+# Sort by listeners
+artists = artists.sort_values("listeners", ascending = False)
+artists.head(10)
+
+# Save to csv
+save_string = r'C:\Developer\scratch-pad\Python\Web Services\artists.csv'
+artists.to_csv(save_string, index = False)
