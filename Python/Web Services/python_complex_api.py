@@ -48,7 +48,7 @@ results = []
 
 # Set initial page and high total number
 page = 1
-total_pages = 99999
+total_pages = 100
 
 # Retrieve paginated data
 while page <= total_pages:
@@ -87,7 +87,7 @@ while page <= total_pages:
 # --- Processing Data with Pandas ---
 
 # Filter response
-r0 = responses[0]
+r0 = results[0]
 r0_json = r0.json()
 r0_artists = r0_json['artists']['artist']
 
@@ -96,10 +96,14 @@ r0_df = pd.DataFrame(r0_artists)
 r0_df.head()
 
 # Create single df from list of dfs
-frames = [pd.DataFrame(r.json()['artists']['artist']) for r in responses]
+frames = [pd.DataFrame(r.json()['artists']['artist']) for r in results]
 artists = pd.concat(frames)
 artists.head()
 
 # Remove images column
 artists = artists.drop('image', axis = 1)
 artists.head()
+
+# Peek data
+artists.info()
+artists.describe()
