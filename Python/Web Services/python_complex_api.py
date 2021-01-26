@@ -104,6 +104,9 @@ artists.head()
 artists = artists.drop('image', axis = 1)
 artists.head()
 
+# Remove duplicates
+artists = artists.drop_duplicates().reset_index(drop = True)
+
 # Peek data
 artists.info()
 artists.describe()
