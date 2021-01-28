@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\C++",
+    "\\C++\\CalculatorApp",
     "\\Dot-Net"
   ],
-  "SelectedNode": "\\Dot-Net",
+  "SelectedNode": "\\C++\\CalculatorApp\\CalculatorApp.cpp",
   "PreviewInSolutionExplorer": false
 }
