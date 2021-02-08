@@ -16,5 +16,16 @@ int main()
     cout << "Please enter the operation to perform. Format a+b | a-b | a*b | a/b"
         << endl;
     
-    
+    Calculator c;
+
+    while (true)
+    {
+        cin >> x >> oper >> y;
+
+        result = c.Calculate(x, oper, y);
+
+        cout << "Result is: " << result << endl;
+    }
+
+    return 0;
 }
