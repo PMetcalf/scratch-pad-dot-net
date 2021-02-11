@@ -1,7 +1,7 @@
 // Calculator example - This file contains the 'main' function - Program exectution begins and ends there.
 
 #include <iostream>
-#include "Calculator.h"
+#include "Calculator.cpp"
 
 using namespace std;
 
