@@ -20,10 +20,24 @@ int main()
 
     while (true)
     {
+        // Read inputs
         cin >> x >> oper >> y;
 
-        result = c.Calculate(x, oper, y);
+        // Handle division by zero
+        if (oper == '/' && y == 0)
+        {
+            cout << "Division by 0 exception" << endl;
 
+            continue;
+        }
+
+        else
+        {
+            // Perform calculation
+            result = c.Calculate(x, oper, y);
+        }
+        
+        // Present outputs
         cout << "Result is: " << result << endl;
     }
 
