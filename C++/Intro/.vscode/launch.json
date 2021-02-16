@@ -10,7 +10,7 @@
             "request": "launch",
             "program": "Calculator_App.exe",
             "args": [],
-            "stopAtEntry": false,
+            "stopAtEntry": true,
             "cwd": "${workspaceFolder}",
             "environment": [],
             "console": "externalTerminal",
