@@ -1,8 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\C++"
+    "\\C++",
+    "\\Dot-Net",
+    "\\Dot-Net\\Basics",
+    "\\Dot-Net\\Basics\\dotNet_Lambda_Example",
+    "\\Dot-Net\\c-sharp-classes\\bin",
+    "\\Dot-Net\\c-sharp-classes\\obj"
   ],
-  "SelectedNode": "\\C++",
+  "SelectedNode": "\\Dot-Net\\Basics\\dotNet_Lambda_Example",
   "PreviewInSolutionExplorer": false
 }
