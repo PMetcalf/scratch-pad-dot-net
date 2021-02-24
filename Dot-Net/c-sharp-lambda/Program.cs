@@ -35,6 +35,7 @@ namespace c_sharp_lambda
             Console.WriteLine();
 
             // Using Lambda to find all numbers divisible by three
+            List<int> divBy3 = numbers.FindAll(x => (x % 3) == 0);
 
             // Foreach loop to display divisible numbers
         }
