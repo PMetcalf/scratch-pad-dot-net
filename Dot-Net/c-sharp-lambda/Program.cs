@@ -16,6 +16,12 @@ namespace c_sharp_lambda
             };
 
             // Foreach loop to display the numbers
+            Console.WriteLine("The List : ");
+            foreach(var value in numbers)
+            {
+                Console.WriteLine("{0} ", value);
+            }
+            Console.WriteLine();
 
             // Using Lambda to calculate square of each value
 
