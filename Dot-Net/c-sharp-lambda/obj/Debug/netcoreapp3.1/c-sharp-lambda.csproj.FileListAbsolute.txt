@@ -1,0 +1,13 @@
+D:\Developer Area\scratch-pad\Dot-Net\c-sharp-lambda\bin\Debug\netcoreapp3.1\c-sharp-lambda.exe
+D:\Developer Area\scratch-pad\Dot-Net\c-sharp-lambda\bin\Debug\netcoreapp3.1\c-sharp-lambda.deps.json
+D:\Developer Area\scratch-pad\Dot-Net\c-sharp-lambda\bin\Debug\netcoreapp3.1\c-sharp-lambda.runtimeconfig.json
+D:\Developer Area\scratch-pad\Dot-Net\c-sharp-lambda\bin\Debug\netcoreapp3.1\c-sharp-lambda.runtimeconfig.dev.json
+D:\Developer Area\scratch-pad\Dot-Net\c-sharp-lambda\bin\Debug\netcoreapp3.1\c-sharp-lambda.dll
+D:\Developer Area\scratch-pad\Dot-Net\c-sharp-lambda\bin\Debug\netcoreapp3.1\c-sharp-lambda.pdb
+D:\Developer Area\scratch-pad\Dot-Net\c-sharp-lambda\obj\Debug\netcoreapp3.1\c-sharp-lambda.csprojAssemblyReference.cache
+D:\Developer Area\scratch-pad\Dot-Net\c-sharp-lambda\obj\Debug\netcoreapp3.1\c-sharp-lambda.AssemblyInfoInputs.cache
+D:\Developer Area\scratch-pad\Dot-Net\c-sharp-lambda\obj\Debug\netcoreapp3.1\c-sharp-lambda.AssemblyInfo.cs
+D:\Developer Area\scratch-pad\Dot-Net\c-sharp-lambda\obj\Debug\netcoreapp3.1\c-sharp-lambda.csproj.CoreCompileInputs.cache
+D:\Developer Area\scratch-pad\Dot-Net\c-sharp-lambda\obj\Debug\netcoreapp3.1\c-sharp-lambda.dll
+D:\Developer Area\scratch-pad\Dot-Net\c-sharp-lambda\obj\Debug\netcoreapp3.1\c-sharp-lambda.pdb
+D:\Developer Area\scratch-pad\Dot-Net\c-sharp-lambda\obj\Debug\netcoreapp3.1\c-sharp-lambda.genruntimeconfig.cache
