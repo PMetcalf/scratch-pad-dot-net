@@ -38,6 +38,12 @@ namespace c_sharp_lambda
             List<int> divBy3 = numbers.FindAll(x => (x % 3) == 0);
 
             // Foreach loop to display divisible numbers
+            Console.Write("Numbers divisible by 3 : ");
+            foreach(var value in divBy3)
+            {
+                Console.Write("{0} ", value);
+            }
+            Console.WriteLine();
         }
     }
 }
