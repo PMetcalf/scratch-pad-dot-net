@@ -1,5 +1,7 @@
-﻿// C# program to illustrate the lambda expression.
+﻿// C# program to illustrate the Lambda Expression.
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace c_sharp_lambda
 {
