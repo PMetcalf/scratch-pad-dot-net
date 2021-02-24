@@ -16,15 +16,23 @@ namespace c_sharp_lambda
             };
 
             // Foreach loop to display the numbers
-            Console.WriteLine("The List : ");
+            Console.Write("The List : ");
             foreach(var value in numbers)
             {
-                Console.WriteLine("{0} ", value);
+                Console.Write("{0} ", value);
             }
             Console.WriteLine();
 
             // Using Lambda to calculate square of each value
-            var square = numbers.Select(x => x * x)
+            var squares = numbers.Select(x => x * x);
+
+            // Foreach loop to display squares
+            Console.Write("Squares : ");
+            foreach(var value in squares)
+            {
+                Console.Write("{0} ", value);
+            }
+            Console.WriteLine();
 
             // Using Lambda to find all numbers divisible by three
 
