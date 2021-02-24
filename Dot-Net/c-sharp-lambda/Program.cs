@@ -24,6 +24,7 @@ namespace c_sharp_lambda
             Console.WriteLine();
 
             // Using Lambda to calculate square of each value
+            var square = numbers.Select(x => x * x)
 
             // Using Lambda to find all numbers divisible by three
 
