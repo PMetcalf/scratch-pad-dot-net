@@ -9,6 +9,8 @@ namespace c_sharp_lambda
     {
         static void Main(string[] args)
         {
+            // --- Here is a basic example --- 
+
             // List to store numbers
             List<int> numbers = new List<int>()
             {
@@ -44,6 +46,25 @@ namespace c_sharp_lambda
                 Console.Write("{0} ", value);
             }
             Console.WriteLine();
+
+            // --- Here is an example with Classes ---
         }
     }
+
+    // User defined student class
+    class Student
+    {
+        public int rollNo
+        {
+            get;
+            set;
+        }
+
+        public string name
+        {
+            get;
+            set;
+        }
+    }
+
 }
