@@ -10,6 +10,10 @@ namespace c_sharp_lambda
         static void Main(string[] args)
         {
             // List to store numbers
+            List<int> numbers = new List<int>()
+            {
+                36, 71, 12, 15, 29, 18, 27, 17, 9, 34
+            };
 
             // Foreach loop to display the numbers
 
