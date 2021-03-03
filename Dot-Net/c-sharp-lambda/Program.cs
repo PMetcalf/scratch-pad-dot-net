@@ -50,6 +50,14 @@ namespace c_sharp_lambda
             // --- Here is an example with Classes ---
 
             // List of students
+            List<Student> details = new List<Student>()
+            {
+                new Student{ rollNo = 1, name = "Paul"},
+                new Student{ rollNo = 2, name = "Amy"},
+                new Student{ rollNo = 3, name = "Chris"},
+                new Student{ rollNo = 4, name = "Jamie"},
+                new Student{ rollNo = 5, name = "Eugene"}
+            };
 
             // Use Lambda to sort details list based on name in ascending order
         }

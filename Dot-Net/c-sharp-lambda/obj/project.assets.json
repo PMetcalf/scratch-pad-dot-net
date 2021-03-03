@@ -8,23 +8,25 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\paulm\\.nuget\\packages\\": {},
-    "D:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\ASUS-PC\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Developer Area\\scratch-pad\\Dot-Net\\c-sharp-lambda\\c-sharp-lambda.csproj",
+      "projectUniqueName": "C:\\Developer\\scratch-pad\\Dot-Net\\c-sharp-lambda\\c-sharp-lambda.csproj",
       "projectName": "c-sharp-lambda",
-      "projectPath": "D:\\Developer Area\\scratch-pad\\Dot-Net\\c-sharp-lambda\\c-sharp-lambda.csproj",
-      "packagesPath": "C:\\Users\\paulm\\.nuget\\packages\\",
-      "outputPath": "D:\\Developer Area\\scratch-pad\\Dot-Net\\c-sharp-lambda\\obj\\",
+      "projectPath": "C:\\Developer\\scratch-pad\\Dot-Net\\c-sharp-lambda\\c-sharp-lambda.csproj",
+      "packagesPath": "C:\\Users\\ASUS-PC\\.nuget\\packages\\",
+      "outputPath": "C:\\Developer\\scratch-pad\\Dot-Net\\c-sharp-lambda\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\paulm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ASUS-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -37,6 +39,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -48,6 +51,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
@@ -63,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
