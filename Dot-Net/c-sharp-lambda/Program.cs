@@ -60,6 +60,12 @@ namespace c_sharp_lambda
             };
 
             // Use Lambda to sort details list based on name in ascending order
+            var newDetails = details.OrderBy(x => x.name);
+
+            foreach(var value in newDetails)
+            {
+                Console.WriteLine(value.rollNo + " " + value.name);
+            }
         }
     }
 
